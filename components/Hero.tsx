@@ -33,7 +33,7 @@ export function Hero({ title, subtitle }: HeroProps) {
         <div className="mx-auto max-w-3xl text-center">
           {/* Google Ratings button */}
           <a
-            href="https://www.google.com/maps/place/AB+Repair+LLC"
+            href="https://share.google/XlGRh7wVLLNaoFcgI"
             target="_blank"
             rel="noopener noreferrer"
             className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-white/20 hover:scale-105"
