@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { featuredBrands } from "@/lib/data/brands";
 
 export function BrandsSection() {
@@ -18,11 +19,15 @@ export function BrandsSection() {
           {featuredBrands.map((brand) => (
             <div
               key={brand.slug}
-              className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm"
+              className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
             >
-              <span className="text-center text-sm font-medium text-brand-dark-green">
-                {brand.name}
-              </span>
+              <Image
+                src={`/brands/${brand.slug}.png`}
+                alt={brand.name}
+                width={120}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
             </div>
           ))}
         </div>
